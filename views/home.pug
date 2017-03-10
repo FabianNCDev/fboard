@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title FBoard
+    link(href="/estilos.css", rel="stylesheet")
+    script(src="/socket.io/socket.io.js")
+    script(src="/drawing.js")
+  body(onload="crearLienzo()")
+    h1= title
+    h3
+      |Contador en
+      span.contador
+    .pizarra#pizarra
